@@ -15,17 +15,22 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-
+	<scm>
+		<url>https://github.com/edoardopelli/joinup-commons.git</url>
+		<connection>scm:git:https://github.com/edoardopelli/joinup-commons.git</connection>
+		<developerConnection>scm:git:https://github.com/edoardopelli/joinup-commons.git</developerConnection>
+	</scm>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				
+
 				<configuration>
-					<source>11</source> <target>11</target> 
+					<source>11</source>
+					<target>11</target>
 					<annotationProcessorPaths>
-					
+
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
