@@ -1,6 +1,7 @@
 package com.sn.vj.commons.dto;
 
 import java.time.Instant;
+import java.util.Date;
 
 import lombok.Data;
 import lombok.Getter;
@@ -15,6 +16,6 @@ public class KafkaSmsMessage {
 	private Long timestamp;
 	private String idSms;
 	@Getter
-	private final Instant instant = Instant.now();
+	private final Date date = new Date();
 	
 }
