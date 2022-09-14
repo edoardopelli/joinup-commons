@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sn.vj</groupId>
 	<artifactId>joinup-commons</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.4</version>
 	<name>joinup-commons</name>
 
 	<dependencies>
@@ -17,7 +17,7 @@
 		<url>https://github.com/edoardopelli/joinup-commons.git</url>
 		<connection>scm:git:https://github.com/edoardopelli/joinup-commons.git</connection>
 		<developerConnection>scm:git:https://github.com/edoardopelli/joinup-commons.git</developerConnection>
-	  <tag>joinup-commons-1.0.0</tag>
+	  <tag>joinup-commons-1.0.4</tag>
   </scm>
 	<build>
 		<plugins>
