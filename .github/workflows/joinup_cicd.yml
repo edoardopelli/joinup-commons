@@ -20,9 +20,14 @@ jobs:
           distribution: 'corretto'
 
       - name: Build with Maven
-        run:  |     
+        run:  |
+              echo ${GITHUB_TOKEN}     
               git config --global user.name "edoardopelli"
               git config --global user.email "edoardo.pelli@gmail.com"
-              mvn -X release:prepare release:perform
+              git config --global user.password "${GITHUB_TOKEN}"
+              mvn release:prepare release:perform
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+    
