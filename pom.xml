@@ -50,17 +50,17 @@
 			<layout>default</layout>
 		</repository>
 	</repositories>
-	<distributionManagement>
+<!--	<distributionManagement>-->
 
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<url>https://www.setupnet.it/nexus/repository/maven-snapshots/</url>
-		</snapshotRepository>
-		<repository>
-			<id>nexus-releases</id>
-			<url>https://www.setupnet.it/nexus/repository/maven-releases/</url>
+<!--		<snapshotRepository>-->
+<!--			<id>nexus-snapshots</id>-->
+<!--			<url>https://www.setupnet.it/nexus/repository/maven-snapshots/</url>-->
+<!--		</snapshotRepository>-->
+<!--		<repository>-->
+<!--			<id>nexus-releases</id>-->
+<!--			<url>https://www.setupnet.it/nexus/repository/maven-releases/</url>-->
 
-		</repository>
-	</distributionManagement>
+<!--		</repository>-->
+<!--	</distributionManagement>-->
 
 </project>
