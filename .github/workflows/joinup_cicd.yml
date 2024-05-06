@@ -21,7 +21,7 @@ jobs:
 
       - name: Build with Maven
         run:  |     
-              git config --global user.name "GitHub Actions"
+              git config --global user.name "edoardopelli"
               git config --global user.email "edoardo.pelli@gmail.com"
               mvn -X release:prepare release:perform
         env:
