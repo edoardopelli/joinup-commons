@@ -17,9 +17,9 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '21'
-          distribution: 'zulu'
+          distribution: 'corretto'
 
       - name: Build with Maven
-        run: mvn deploy
+        run: mvn release:prepare release:perform
         env:
           GITHUB_TOKEN: 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
