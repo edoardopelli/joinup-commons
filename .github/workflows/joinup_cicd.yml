@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up JDK
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v4
         with:
           java-version: '21'
-          distribution: 'corretto'
+          distribution: 'adopt'
 
       - name: Build with Maven
         run: mvn release:prepare release:perform
