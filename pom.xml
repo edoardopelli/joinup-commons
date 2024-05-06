@@ -57,7 +57,8 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/edoardopelli</url>
+			<url>https://maven.pkg.github.com/edoardopelli/joinup-commons</url>
+		
 		</repository>
 	</distributionManagement>
 </project>
