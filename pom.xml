@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sn.vj</groupId>
 	<artifactId>joinup-commons</artifactId>
@@ -16,9 +18,10 @@
 	<scm>
 		<url>https://github.com/edoardopelli/joinup-commons.git</url>
 		<connection>scm:git:https://github.com/edoardopelli/joinup-commons.git</connection>
-		<developerConnection>scm:git:https://github.com/edoardopelli/joinup-commons.git</developerConnection>
-	  <tag>joinup-commons-1.0.0</tag>
-  </scm>
+		<developerConnection>
+			scm:git:https://github.com/edoardopelli/joinup-commons.git</developerConnection>
+		<tag>joinup-commons-1.0.0</tag>
+	</scm>
 	<build>
 		<plugins>
 			<plugin>
@@ -50,17 +53,11 @@
 			<layout>default</layout>
 		</repository>
 	</repositories>
-<!--	<distributionManagement>-->
-
-<!--		<snapshotRepository>-->
-<!--			<id>nexus-snapshots</id>-->
-<!--			<url>https://www.setupnet.it/nexus/repository/maven-snapshots/</url>-->
-<!--		</snapshotRepository>-->
-<!--		<repository>-->
-<!--			<id>nexus-releases</id>-->
-<!--			<url>https://www.setupnet.it/nexus/repository/maven-releases/</url>-->
-
-<!--		</repository>-->
-<!--	</distributionManagement>-->
-
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/edoardopelli</url>
+		</repository>
+	</distributionManagement>
 </project>
