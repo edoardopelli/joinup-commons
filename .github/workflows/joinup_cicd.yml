@@ -17,9 +17,9 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '21'
-          distribution: 'adopt'
+          distribution: 'corretto'
 
       - name: Build with Maven
-        run: mvn release:prepare release:perform
+        run: mvn release:prepare releas:perform
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
