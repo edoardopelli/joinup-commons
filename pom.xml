@@ -53,7 +53,7 @@
 	</build>
 	<repositories>
 		<repository>
-			<id>jvnet-nexus-edoardopelli/id>
+			<id>jvnet-nexus-edoardopelli</id>
 			<url>http://maven.java.net/content/repositories/staging/</url>
 			<layout>default</layout>
 		</repository>
