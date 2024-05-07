@@ -32,8 +32,8 @@ jobs:
               echo '  <servers>' >> $HOME/.m2/settings.xml
               echo '    <server>' >> $HOME/.m2/settings.xml
               echo '      <id>github</id>'' >> $HOME/.m2/settings.xml
-              echo '      <username>edoardopelli</username>'' >> $HOME/.m2/settings.xml
-              echo '      <password>${GITHUB_TOKEN}</password>'' >> $HOME/.m2/settings.xml
+              echo '      <username>edoardopelli</username>' >> $HOME/.m2/settings.xml
+              echo '      <password>${GITHUB_TOKEN}</password>' >> $HOME/.m2/settings.xml
               echo '    </server>' >> $HOME/.m2/settings.xml
               echo '  </servers>' >> $HOME/.m2/settings.xml
               echo '</settings>' >> $HOME/.m2/settings.xml
