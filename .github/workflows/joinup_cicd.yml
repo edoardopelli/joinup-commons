@@ -31,7 +31,7 @@ jobs:
               echo '                             http://maven.apache.org/xsd/settings-1.0.0.xsd">' >> $HOME/.m2/settings.xml
               echo '  <servers>' >> $HOME/.m2/settings.xml
               echo '    <server>' >> $HOME/.m2/settings.xml
-              echo '      <id>github</id>'' >> $HOME/.m2/settings.xml
+              echo '      <id>github</id>' >> $HOME/.m2/settings.xml
               echo '      <username>edoardopelli</username>' >> $HOME/.m2/settings.xml
               echo '      <password>${GITHUB_TOKEN}</password>' >> $HOME/.m2/settings.xml
               echo '    </server>' >> $HOME/.m2/settings.xml
