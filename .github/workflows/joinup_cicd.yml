@@ -24,7 +24,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_USERNAME: edoardopelli
         run:  |
-              echo ${GITHUB_TOKEN}     
+              echo "<settings><servers><server><id>github</id><username>edoardopelli</username><password>${env.GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
               git config --global user.name "edoardopelli"
               git config --global user.email "edoardo.pelli@gmail.com"
               git config --global user.password "${GITHUB_TOKEN}"
