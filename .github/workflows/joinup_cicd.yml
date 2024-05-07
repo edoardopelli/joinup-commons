@@ -27,19 +27,6 @@ jobs:
               mkdir -p ~/.ssh
               echo '${{ secrets.SSH_PRIVATE_KEY }}' > ~/.ssh/id_ed25519
               chmod 600 ~/.ssh/id_ed25519
-              echo '<?xml version="1.0" encoding="UTF-8"?>' > $HOME/.m2/settings.xml
-              echo '<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"' >> $HOME/.m2/settings.xml
-              echo '         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' >> $HOME/.m2/settings.xml
-              echo '         xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0' >> $HOME/.m2/settings.xml
-              echo '                             http://maven.apache.org/xsd/settings-1.0.0.xsd">' >> $HOME/.m2/settings.xml
-              echo '  <servers>' >> $HOME/.m2/settings.xml
-              echo '    <server>' >> $HOME/.m2/settings.xml
-              echo '      <id>github</id>' >> $HOME/.m2/settings.xml
-              echo '      <username>edoardopelli</username>' >> $HOME/.m2/settings.xml
-              echo '      <password>${GITHUB_TOKEN}</password>' >> $HOME/.m2/settings.xml
-              echo '    </server>' >> $HOME/.m2/settings.xml
-              echo '  </servers>' >> $HOME/.m2/settings.xml
-              echo '</settings>' >> $HOME/.m2/settings.xml
               git config --global user.name "edoardopelli"
               git config --global user.email "edoardo.pelli@gmail.com"
               git config --global user.password "${GITHUB_TOKEN}"
