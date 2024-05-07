@@ -24,6 +24,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_USERNAME: edoardopelli
         run:  |
+              mkdir -p ~/.ssh
+              echo '${{ secrets.SSH_PRIVATE_KEY }}'' > ~/.ssh/id_ed25519
               echo '<?xml version="1.0" encoding="UTF-8"?>' > $HOME/.m2/settings.xml
               echo '<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"' >> $HOME/.m2/settings.xml
               echo '         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' >> $HOME/.m2/settings.xml
