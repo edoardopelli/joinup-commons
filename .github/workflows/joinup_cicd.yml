@@ -51,7 +51,7 @@ jobs:
   
       - name: Build with Maven
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASES_SECRET }}
           GIT_USERNAME: edoardopelli
         run:  |
               mkdir -p ~/.ssh
