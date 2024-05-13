@@ -33,7 +33,7 @@ jobs:
                 }
               }
               ]
-            servers: >
+          servers: >
               [
                 {
                   "id": "github",
@@ -48,7 +48,6 @@ jobs:
                   }
                 }
               ]
-  
       - name: Build with Maven
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASES_SECRET }}
