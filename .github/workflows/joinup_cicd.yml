@@ -27,7 +27,7 @@ jobs:
             {
                 "id": "github",
                 "name": "github",
-                "url": "https://maven.pkg.github.com/edoardopelli/releases",
+                "url": "https://maven.pkg.github.com/edoardopelli/joinup-commons",
                 "releases": {
                   "enabled": "true"
                 }
@@ -48,9 +48,10 @@ jobs:
                   }
                 }
               ]
+  
       - name: Build with Maven
         env:
-          GITHUB_TOKEN: ${{ secrets.RELEASES_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_USERNAME: edoardopelli
         run:  |
               mkdir -p ~/.ssh
