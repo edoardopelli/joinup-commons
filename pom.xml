@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sn.vj</groupId>
 	<artifactId>joinup-commons</artifactId>
-	<version>1.0.32-SNAPSHOT</version>
+	<version>1.0.30-SNAPSHOT</version>
 	<name>joinup-commons</name>
 
 	<dependencies>
@@ -68,7 +68,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/edoardopelli/releases</url>
+			<url>https://maven.pkg.github.com/edoardopelli/joinup-commons</url>
 
 		</repository>
 	</distributionManagement>
