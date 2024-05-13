@@ -19,6 +19,36 @@ jobs:
           java-version: '21'
           distribution: 'corretto'
 
+      - name: Write Maven settings.xml
+        uses: whelk-io/maven-settings-xml-action@v22
+        with:
+          repositories: >
+            [
+            {
+                "id": "github",
+                "name": "github",
+                "url": "https://maven.pkg.github.com/edoardopelli/releases",
+                "releases": {
+                  "enabled": "true"
+                }
+              }
+              ]
+            servers: >
+              [
+                {
+                  "id": "github",
+                  "username": "${env.GIT_USERNAME}",
+                  "password": "${env.GITHUB_TOKEN}",
+                  "configuration": {
+                  "httpConfiguration": {
+                      "all": {
+                        "usePreemptive": "true"
+                      }
+                    }
+                  }
+                }
+              ]
+  
       - name: Build with Maven
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
