@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sn.vj</groupId>
 	<artifactId>joinup-commons</artifactId>
-	<version>1.0.32-SNAPSHOT</version>
+	<version>1.0.32</version>
 	<name>joinup-commons</name>
 
 	<dependencies>
@@ -23,7 +23,7 @@
 		<connection>scm:git:git@github.com:edoardopelli/joinup-commons.git</connection>
 		<developerConnection>scm:git:git@github.com:edoardopelli/joinup-commons.git</developerConnection>
 		<url>git@github.com:edoardopelli/joinup-commons.git</url>
-		<tag>HEAD</tag>
+		<tag>joinup-commons-1.0.32</tag>
 	</scm>
 	<build>
 		<plugins>
